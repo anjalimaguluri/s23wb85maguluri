@@ -26,7 +26,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/employee', employeeRouter);
 app.use('/board', boardRouter);
-app.use('/board', selectorRouter);
+app.use('/selector', selectorRouter);
 
 
 // catch 404 and forward to error handler

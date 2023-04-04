@@ -9,3 +9,8 @@ block content
             div(class="col-sm-2 bg-danger m-1 p-3" onclick=`buy(${index})` ) #{employee.employee_Name} - #{employee.employee_age} - #{employee.employee_salary}
         
     script.
+
+    function buy(itemNo)
+      {
+        alert(`You purchased Item ${itemNo+1}`)
+      }
