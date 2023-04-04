@@ -6,4 +6,14 @@ block content
 
   p Naganjali Maguluri
   
-  button(type="button",onclick="doBump()" class="btn btn-primary") Press Me
+  button(type="button",onclick="doRump()" class="btn btn-primary") Press Me
+
+  div(id="reduce") Reduce the value
+  script.
+    var count=20;
+    var change=-1;
+    function doReduce() {
+      count = count+change;
+      change--;
+      document.getElementById("reduce").innerHTML=`Count ${count} with change ${change}`
+    }
