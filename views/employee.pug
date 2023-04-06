@@ -8,9 +8,11 @@ block content
         each employee,index in employees
             div(class="col-sm-2 bg-danger m-1 p-3" onclick=`buy(${index})` ) #{employee.employee_Name} - #{employee.employee_age} - #{employee.employee_salary}
         
+    
+    
     script.
 
-    function buy(itemNo)
-      {
+       function buy(itemNo)
+       {
         alert(`You purchased Item ${itemNo+1}`)
-      }
+       }
